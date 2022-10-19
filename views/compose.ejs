@@ -1,0 +1,17 @@
+<%- include("header") %>
+
+<h1>Compose</h1>
+<form action="/compose" method="post">
+    <div class="form-group">
+        <label for="title">Title</label>
+        <input type="text" name="title" id="title" class="form-control" placeholder="Enter title">
+        <small class="form-text text-muted">Make your titles catchy</small>
+    </div>
+    <div class="form-group">
+        <label for="compose">Content</label>    
+        <textarea class="form-control" name="compose" id="compose" cols="30" rows="5"></textarea>
+    </div>
+    <button type="submit" class="btn btn-primary">Publish</button>
+</form>
+
+<%- include("footer") %>
